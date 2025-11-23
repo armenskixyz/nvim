@@ -1019,5 +1019,22 @@ require('lazy').setup({
   },
 })
 
+require('code_runner').setup {
+  filetype = {
+    java = {
+      'cd $dir &&',
+      'javac $fileName &&',
+      'java $fileNameWithoutExt',
+    },
+    python = 'python3 -u',
+    typescript = 'deno run',
+    rust = {
+      'cd $dir &&',
+      'rustc $fileName &&',
+      '$dir/$fileNameWithoutExt',
+    },
+    c = 'cd $dir && gcc $fileName -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt',
+  },
+}
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
