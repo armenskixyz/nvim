@@ -19,6 +19,7 @@ return {
     theme = 'doom',
     config = {
       header = vim.split(header, '\n'),
+      header_hl = 'Number',
       center = {
         {
           icon = ' ',
@@ -34,14 +35,18 @@ return {
         {
           icon = ' ',
           desc = 'Find Recent Files',
+          desc_hl = 'String',
           key = 'f',
+          icon_hl = 'Title',
           keymap = 'SPC s .',
           key_format = ' %s', -- remove default surrounding `[]`
           action = 'Telescope oldfiles',
         },
         {
           icon = '󰁯 ',
+          icon_hl = 'Title',
           desc = 'Open last session',
+          desc_hl = 'String',
           key = 'g',
           key_format = ' %s',
           action = 'lua require("persistence").load()',

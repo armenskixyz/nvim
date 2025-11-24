@@ -1,1 +1,6 @@
-return { 'catppuccin/nvim', name = 'catppuccin', lazy = false, priority = 1000 }
+return {
+  'catppuccin/nvim',
+  name = 'catppuccin',
+  lazy = false,
+  priority = 1000,
+}
