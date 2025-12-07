@@ -43,6 +43,15 @@ return {
           action = 'Telescope oldfiles',
         },
         {
+          icon = ' ',
+          icon_hl = 'Title',
+          desc = 'Open new buffer',
+          desc_hl = 'String',
+          key = 'v',
+          key_format = ' %s',
+          action = 'e new_buffer',
+        },
+        {
           icon = '󰁯 ',
           icon_hl = 'Title',
           desc = 'Open last session',
